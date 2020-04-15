@@ -1,12 +1,7 @@
 \documentclass[a4paper,11pt]{jsarticle}
 
-
-% 数式
-\usepackage{amsmath,amsfonts}
-\usepackage{bm}
-% 画像
-\usepackage[dvipdfmx]{graphicx}
-
+% 自作マクロ
+% \input{mymacro.tex}
 
 \begin{document}
 
@@ -14,20 +9,45 @@
 \author{香川渓一郎}
 \date{\today}
 \maketitle
-
-
 \section{Guo, et al. (2017) day:2020.4.15}
     \subsection{論文情報}
     Guo, Hengdao, et al. "A critical review of cascading failure analysis and modeling of power system." Renewable and Sustainable Energy Reviews 80 (2017): 9-22.
     % 著者名, 論文タイトル, 掲載雑誌, 年, ページ.
     \subsection{何に関する論文で何を示したのか}
-    
+    カスケード故障(cascading failure)に関する簡単な概観と関連する文献やモデルを分類した．
+    またカスケード故障に関連する様々な特徴を示し，異なるモデル間の比較を行った．
+    最後に将来注目すべき内容についても触れている．
     \subsection{先行研究と比べてスゴイこと}
+    これまで様々な数理モデルや解析手法が提案されカスケード故障における複雑なメカニズムの理解が進められてきた．
+    例えば Papic, et al. (2011), Vaiman, et al. (2012), Biatec, et al. (2016) が挙げられる．
+    しかしこれら様々なモデルや解析手法の概要や比較検討を行った研究は少なく，本論文でこれらの研究を簡単に概観し，最新のカスケード故障解析ツールやモデルを普及させ，今後の課題を明らかにした．
     \subsection{論文の核となるモノ}
+    以下のように６種類に分類されたモデルについて比較を行う．
+    \begin{itemize}
+      \item トポロジカルモデル (Topological models)
+      \item 確率シミュレーションモデル (Stochastic simulation models)
+      \item 高レベル統計モデル (High-level statistical models)
+      \item 動的シミュレーションモデル (Dynamic simulation models)
+      \item 相互依存モデル (Interdependent models)
+      \item その他
+    \end{itemize}
     \subsection{どのような手法で示したのか}
     \subsection{今後の展望や課題}
     \subsection{この論文を引用している論文}
     \subsection{この論文が引用している主要な先行研究}
+    Biatec, et al. (2016) \cite{BialekETAL2016},
+    Papic, et al. (2011) \cite{PapicETAL2011},
+    Vaiman, et al. (2012) \cite{VaimanETAL2012},
 
+\newpage
+
+\begin{thebibliography}{99}
+  \bibitem{BialekETAL2016}
+  Bialek, Janusz, et al. "Benchmarking and validation of cascading failure analysis tools." IEEE Transactions on Power Systems 31.6 (2016): 4887-4900.
+  \bibitem{PapicETAL2011}
+  Papic, Milorad, et al. "Survey of tools for risk assessment of cascading outages." 2011 IEEE Power and Energy Society General Meeting. IEEE, 2011.
+  \bibitem{VaimanETAL2012}
+  Vaiman, Marianna, et al. "Risk assessment of cascading outages: Methodologies and challenges." IEEE Transactions on Power Systems 27.2 (2012): 631.
+\end{thebibliography}
 
 \end{document}
