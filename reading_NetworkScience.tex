@@ -1,9 +1,9 @@
 \documentclass[a4paper,11pt]{jsarticle}
 
 % 自作マクロ
-% \input{mymacro.tex}
+\input{mymacro.tex}
 
-\usepackage[dvipdfmx]{hyperref}
+% \usepackage[dvipdfmx]{hyperref}
 % \usepackage[hypertex]{hyperref}
 % \usepackage[dvips]{hyperref}
 
@@ -16,6 +16,7 @@
 \date{\today}
 \maketitle
 
+\setcounter{tocdepth}{1}
 \tableofcontents
 
 \newpage
@@ -88,20 +89,33 @@
     従来の電力システムの動的解析ツールは多く存在するが，その多くがカスケード時のシステム全体の構成要素間の相互作用を考慮していない．
     異なるモデルをどのように組み合わせるか，異なる状況やカスケードの段階でどのモデルが適切かを検討することも必要である．
     \subsection{この論文を引用している論文}
+    Gholami, et al. (2018) \cite{GholamiETAL2018},
+    Tu, et al. (2018) \cite{TuETAL2018},
+    Eisenberg (2018) \cite{Eisenberg2018},
+    Schauer, et al. (2018) \cite{SchauerETAL2018}.
     \subsection{この論文が引用している主要な先行研究}
     Biatec, et al. (2016) \cite{BialekETAL2016},
     Papic, et al. (2011) \cite{PapicETAL2011},
-    Vaiman, et al. (2012) \cite{VaimanETAL2012},
+    Vaiman, et al. (2012) \cite{VaimanETAL2012}.
 
 \newpage
 
 \begin{thebibliography}{99}
   \bibitem{BialekETAL2016}
   Bialek, Janusz, et al. "Benchmarking and validation of cascading failure analysis tools." IEEE Transactions on Power Systems 31.6 (2016): 4887-4900.
+  \bibitem{Eisenberg2018}
+  Eisenberg, Daniel A. How to think about resilient infrastructure systems. Diss. Arizona State University, 2018.
+  \bibitem{GholamiETAL2018}
+  Gholami, Amin, et al. "Toward a consensus on the definition and taxonomy of power system resilience." IEEE Access 6 (2018): 32035-32053.
   \bibitem{PapicETAL2011}
   Papic, Milorad, et al. "Survey of tools for risk assessment of cascading outages." 2011 IEEE Power and Energy Society General Meeting. IEEE, 2011.
+  \bibitem{SchauerETAL2018}
+  Schauer, Stefan, et al. "Conceptual Framework for Hybrid Situational Awareness in Critical Port Infrastructures." International Conference on Critical Information Infrastructures Security. Springer, Cham, 2018.
+  \bibitem{TuETAL2018}
+  Tu, Haicheng, et al. "Optimal robustness in power grids from a network science perspective." IEEE Transactions on Circuits and Systems II: Express Briefs 66.1 (2018): 126-130.
   \bibitem{VaimanETAL2012}
   Vaiman, Marianna, et al. "Risk assessment of cascading outages: Methodologies and challenges." IEEE Transactions on Power Systems 27.2 (2012): 631.
+
 \end{thebibliography}
 
 \end{document}
